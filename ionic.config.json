@@ -1,5 +1,7 @@
 {
   "name": "instacrops",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

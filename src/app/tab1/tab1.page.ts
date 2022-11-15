@@ -30,4 +30,8 @@ export class Tab1Page implements OnInit {
     console.log(item)
 
   }
+
+  // MostrarInfo(item) {
+
+  // }
 }

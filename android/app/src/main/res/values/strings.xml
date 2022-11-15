@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">instacrops</string>
+    <string name="title_activity_main">instacrops</string>
+    <string name="package_name">instacrops.favio</string>
+    <string name="custom_url_scheme">instacrops.favio</string>
+</resources>
