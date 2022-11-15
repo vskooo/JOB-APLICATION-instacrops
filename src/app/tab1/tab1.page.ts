@@ -7,19 +7,27 @@ import { AskoService } from '../asko.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit {
-  hola: string = 'WENA PERROOOO';
+  datos = []
   constructor(
     private service: AskoService
-  ) {}
-ngOnInit(): void {
-  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //Add 'implements OnInit' to the class.
-  this.traerDatos();
-}
-async traerDatos () {
-  let response = await this.service.TraerTodos();
-  console.log(response);
-  
+  ) { }
+  ngOnInit(): void {
 
-}
+    this.traerDatos();
+
+  }
+  async traerDatos() {
+    let response = await this.service.TraerTodos();
+    response.forEach(item => {
+      this.datos.push(item)
+    });
+  }
+
+  ImprimirInfo(item) {
+    //TODO
+    //abrir modal o algo con la info de la variable item
+    console.log("preciono imagen")
+    console.log(item)
+
+  }
 }

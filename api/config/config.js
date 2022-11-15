@@ -10,11 +10,11 @@ types.setTypeParser(1114, function(stringValue) {
 });
 
 const databaseConfig = {
-    'host': '127.0.0.1',
-    'port': 5432,
+    'host': 'containers-us-west-40.railway.app',
+    'port': 6761,
     'database': 'instacrops_db',
     'user': 'postgres',
-    'password': '198486019aA'
+    'password': 'evr4BOkpbIOMCLnoFT6X'
 };
 
 const db = pgp(databaseConfig);
