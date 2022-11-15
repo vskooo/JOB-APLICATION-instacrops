@@ -10,7 +10,7 @@ export class AskoService {
   constructor() { }
   async TraerTodos() {
     try {
-      const res = await axios.get("http://localhost:4000/api/products/getAll", {
+      const res = await axios.get(environment.API + "/api/products/getAll", {
         // responseType: 'json',
       });
       if (res.status == 201) {
@@ -18,7 +18,7 @@ export class AskoService {
       }
     } catch (err) {
       console.log(err);
-      
+
 
     }
   }

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: '127.0.0.1:4000'
+  API: 'http://job-application-instacrops-production.up.railway.app'
 };
 
 
