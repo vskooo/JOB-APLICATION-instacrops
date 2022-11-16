@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AskoService } from '../asko.service';
 
 @Component({
@@ -9,7 +10,8 @@ import { AskoService } from '../asko.service';
 export class Tab1Page implements OnInit {
   datos = []
   constructor(
-    private service: AskoService
+    private service: AskoService,
+    private router: Router
   ) { }
   ngOnInit(): void {
 
@@ -24,11 +26,8 @@ export class Tab1Page implements OnInit {
   }
 
   ImprimirInfo(item) {
-    //TODO
-    //abrir modal o algo con la info de la variable item
-    console.log("preciono imagen")
     console.log(item)
-
+    this.router.navigateByUrl('/detalles', {state:item})
   }
 
   // MostrarInfo(item) {

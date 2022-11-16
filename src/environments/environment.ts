@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'http://job-application-instacrops-production.up.railway.app'
+  API: 'https://job-application-instacrops-production.up.railway.app'
 };
 
 
